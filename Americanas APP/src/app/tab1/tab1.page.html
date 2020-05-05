@@ -27,13 +27,13 @@
   </ion-card>
 
 
-  <ion-grid>
+  <ion-grid style="margin-top: -10%;"> 
     <ion-row class="ion-align-items-center">
       <ion-col size="3" *ngFor="let tipoItem of tipoItem">
-        <ion-card class="item" (click)="abrirCartegoria(tipoItem.id)" >
+        <ion-card class=" fixedCard" (click)="abrirCartegoria(tipoItem.id)" >
           <img src="../assets/img/{{tipoItem.img}}" />
-          <!-- <div class="card-title">{{tipoItem.nome}}</div> -->
-          <div class="card-subtitle subTitulo">{{tipoItem.descricao}}</div>
+          <div class="card-title">{{tipoItem.nome}}</div>
+          <!-- <div class="card-subtitle subTitulo">{{tipoItem.descricao}}</div> -->
         </ion-card>
       </ion-col>
     </ion-row>

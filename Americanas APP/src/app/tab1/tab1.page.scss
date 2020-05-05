@@ -143,3 +143,10 @@ ion-col {
 // width: 25% !important;
 margin-top: -25%;
 }
+
+.fixedCard{
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  margin: 0 !important;
+}
