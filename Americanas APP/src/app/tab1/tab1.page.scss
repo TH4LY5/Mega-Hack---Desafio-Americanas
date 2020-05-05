@@ -129,9 +129,17 @@ ion-col {
 }
 
 .item{
-  width: 30%;
+  width: 60%;
 }
 .subTitulo{
-  font-size: 12px;
+  font-size: 10px;
   margin-top: -20%;
+}
+
+.imagemItem {
+ margin-left: 4%;
+}
+.coluna{
+// width: 25% !important;
+margin-top: -25%;
 }
