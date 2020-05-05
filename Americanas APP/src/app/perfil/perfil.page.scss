@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.avatar-cliente {
+    position: absolute;
+width: 90px;
+height: 90px;
+left: 21px;
+top: 47px;
+
+}
+
+.info-cliente-titulo{
+    position: absolute;
+width: 206px;
+height: 25px;
+left: 132px;
+top: 62px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 15px;
+
+}
+
+.info-cliente-subtitulo{
+    position: absolute;
+    width: 181px;
+    height: 25px;
+    left: 133px;
+    top: 78px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    
+}
+
+.botao-sair{
+    position: absolute;
+width: 86px;
+height: 20px;
+left: 133px;
+top: 103px;
+
+background: #4F4F4F;
+border-radius: 5px;
+}
+
+.info-cliente-bt{
+    position: absolute;
+width: 117px;
+height: 20px;
+left: 222px;
+top: 103px;
+
+background: #C80218;
+border-radius: 5px;
+}
