@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
-  <div class="flex center">
-    <ion-searchbar style="width: 80%" class="barraPesquisa" placeholder="Encontre seus produtos favoritos,  aqui :)">
+  <div class="flex center ">
+    <ion-searchbar  class="barraPesquisa pesquisar" placeholder="Encontre seus produtos favoritos,  aqui :)">
     </ion-searchbar>
     <ion-icon class="codBarra" name="barcode-outline"></ion-icon>
   </div>
@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
   <!--TEXTO INFORMATIVO-->
 <div class="flex center">
-  <ion-card class="cardInformativo">
+  <ion-card class="cardInformativo cardCovid">
     <ion-card-header>
       <ion-card-title class="textoCardInformativo" >COVID - 19</ion-card-title>
     </ion-card-header>
@@ -20,10 +20,17 @@
   </ion-card>
 </div>
 
-<ion-card (click)="abrirCartegoria(tipoComercio.id)" *ngFor="let tipoComercio of tipoComercio">
+<ion-card class="imagem" (click)="abrirCartegoria(tipoComercio.id)" *ngFor="let tipoComercio of tipoComercio">
     <img src="../assets/img/{{tipoComercio.img}}" />
-    <div class="card-title">{{tipoComercio.nome}}</div>
-    <div class="card-subtitle">{{tipoComercio.descricao}}</div>
+    <!-- <div class="card-title">{{tipoComercio.nome}}</div>
+    <div class="card-subtitle">{{tipoComercio.descricao}}</div> -->
   </ion-card>
   
+
+
+  <ion-card class="item" (click)="abrirCartegoria(tipoItem.id)" *ngFor="let tipoItem of tipoItem">
+    <img src="../assets/img/{{tipoItem.img}}" />
+    <!-- <div class="card-title">{{tipoItem.nome}}</div> -->
+    <div class="card-subtitle subTitulo">{{tipoItem.descricao}}</div>
+  </ion-card>
 </ion-content>

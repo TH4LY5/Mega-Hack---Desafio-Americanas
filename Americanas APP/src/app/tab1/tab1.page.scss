@@ -1,84 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.codBarra{
-    position: absolute;
-left: 84.17%;
-right: 4.17%;
-top: 20%;
-bottom: 17.14%;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.codBarra {
+  position: absolute;
+  left: 84.17%;
+  right: 4.17%;
+  top: 20%;
+  bottom: 17.14%;
 }
 
 .barraPesquisa {
-    position: absolute;
-width: 360px;
-height: 70px;
-left: 0px;
-top: 0px;
+  position: absolute;
+  width: 360px;
+  height: 70px;
+  left: 0px;
+  top: 0px;
 }
 
 .cardInformativo {
-    position: absolute;
-width: 332px;
-height: 73px;
-left: 13px;
-top: 84px;
+  position: absolute;
+  width: 332px;
+  height: 73px;
+  left: 13px;
+  top: 84px;
 
-    right: 0%;
-    
-    bottom: 10.96%;
-    
-    background: #C80218;
-    border-radius: 5px;
+  right: 0%;
+
+  bottom: 10.96%;
+
+  background: #c80218;
+  border-radius: 5px;
 }
 
 .textoCardInformativo {
-    position: absolute;
-    left: 19.88%;
-    right: 18.67%;
-    top: 8.22%;
-    bottom: 64.38%;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    
-    color: #FFFFFF;
-    
+  position: absolute;
+  left: 19.88%;
+  right: 18.67%;
+  top: 8.22%;
+  bottom: 64.38%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
 }
 
 .textoCardInformativoI {
-    position: absolute;
-left: 2.11%;
-right: 1.81%;
-top: 35.62%;
-bottom: 36.99%;
+  position: absolute;
+  left: 2.11%;
+  right: 1.81%;
+  top: 35.62%;
+  bottom: 36.99%;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
 ion-content ion-toolbar {
   --background: translucent;
 }
-ion-grid{
-  --ion-grid-width:100px
+ion-grid {
+  --ion-grid-width: 100px;
 }
 
-ion-col{
-  --ion-grid-column-padding:10px	
+ion-col {
+  --ion-grid-column-padding: 10px;
 }
 
 .card-background-page {
-
   ion-card {
     position: relative;
     text-align: center;
@@ -87,20 +85,19 @@ ion-col{
   .card-title {
     position: absolute;
     top: 36%;
-    font-size: 2.0em;
+    font-size: 2em;
     width: 100%;
     font-weight: bold;
     color: #fff;
   }
 
   .card-subtitle {
-    font-size: 1.0em;
+    font-size: 12px;
     position: absolute;
     top: 52%;
     width: 100%;
     color: #fff;
   }
-
 }
 
 .img {
@@ -108,10 +105,33 @@ ion-col{
   margin: auto;
   //width: auto !important;
   align-items: center;
-  }
+}
 
-.logo{
+.logo {
   text-align: center;
   color: green($color: #3bdb3b);
-  font-family: 'Cabin';
+  font-family: "Cabin";
+}
+
+.imagem {
+  width: 92%;
+  margin-top: 69%;
+  margin-left: 4%;
+}
+
+.cardCovid {
+  width: 94%;
+  margin-left: -5px;
+}
+.pesquisar{
+  width: 100%;
+    margin-top: 6%;
+}
+
+.item{
+  width: 30%;
+}
+.subTitulo{
+  font-size: 12px;
+  margin-top: -20%;
 }
