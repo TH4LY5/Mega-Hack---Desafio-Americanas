@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+  <div class="flex center">
+    <ion-searchbar style="width: 80%" class="barraPesquisa" placeholder="Encontre seus produtos favoritos,  aqui :)">
+    </ion-searchbar>
+    <ion-icon class="codBarra" name="barcode-outline"></ion-icon>
+  </div>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!--TEXTO INFORMATIVO-->
+<div class="flex center">
+  <ion-card class="cardInformativo">
+    <ion-card-header>
+      <ion-card-title class="textoCardInformativo" >COVID - 19</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="textoCardInformativoI">
+        Acompanhe aqui nossas ações de combate ao coronavírus
+    </ion-card-content>
+  </ion-card>
+</div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-card (click)="abrirCartegoria(tipoComercio.id)" *ngFor="let tipoComercio of tipoComercio">
+    <img src="../assets/img/{{tipoComercio.img}}" />
+    <div class="card-title">{{tipoComercio.nome}}</div>
+    <div class="card-subtitle">{{tipoComercio.descricao}}</div>
+  </ion-card>
+  
 </ion-content>
